@@ -7,8 +7,8 @@ object Yield extends App {
 
   val list = List(1,2,3,4,5)
   
-  println(for {
+  println((for {
     i <- list
-  } yield "item")
+  } yield "item " + i).map(_.toUpperCase()))
 
 }
